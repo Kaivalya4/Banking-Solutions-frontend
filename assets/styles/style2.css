@@ -6,6 +6,11 @@
     height : 100px;
     width : 100%;
 }
+#divcontent{
+    min-height: calc(100vh - 1px);
+    overflow: hidden;
+    margin-bottom : 10px;
+}
 #button1{
     margin-top : 25px;
     margin-left : 35%;
@@ -21,14 +26,13 @@
 }
 
 #cust-table{
-    margin-top: 75px;
+    margin-top: 10px;
     margin-left : 20%;
     background-image: linear-gradient(118deg , rgba(255, 255, 255,0.6) , rgba(255, 255, 159,0.6));;
     width : 350px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    /*display : none;
-*/}
+}
 #cust-table:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -54,10 +58,7 @@ td{
     background-color: linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
 }
 
-#spacer1{
-    height : 300px;
-    width: 100%;
-}
+
 
 @media screen and (min-width: 700px){
     #cust-table{
@@ -69,27 +70,31 @@ td{
     }
 }
 
-
-@media screen and (max-width : 450px){
+@media screen and (max-width : 420px ) {
     #cust-table{
-        margin-top : -100px;
-        margin-left : 10%;
-        width : 100px;
+        margin-left : 2%;
+        width : 250px;
+        overflow-x: auto;
+        table-layout: fixed;
+        display: block;
     }
-   
 }
 
+
+
 /*footer*/
-footer{
+#fotter{
     color : white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: black;
     padding-bottom : 20px;
-    position: fixed;
-    bottom : 0px;
-    clear: both;
+    margin-bottom: 0px;
+    width : 100vw;
+    align-self: stretch;
+    background-size: 100vw 100%;
 }
 
 #fotp{
@@ -99,7 +104,9 @@ footer{
 }
 
 #fothr{
-    width : 75%;
+    align-items: center;
+    justify-content: center;
+    max-width : 75%;
     height : 2px;
     background-color : white;
 }

@@ -4,7 +4,7 @@
     src: url("../Fonts/Aquire-BW0ox.otf");
 }
 body{
-    background-image: linear-gradient(250deg , 	rgba(191 , 85 , 236 , 0.7) ,rgba(159, 90, 253,0.5),  rgb(51, 51, 255,0.7)) , url('../images/1.jpg');
+    background-image: linear-gradient(250deg , 	rgba(191 , 85 , 236 , 0.7) ,rgba(159, 90, 253,0.5),  rgb(51, 51, 255,0.7))  url('../images/1.jpg');
     background-size: cover;
     height : 100vh;
     width : 100%;
