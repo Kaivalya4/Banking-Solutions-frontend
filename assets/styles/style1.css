@@ -1,0 +1,107 @@
+@font-face {
+    /*inside font-face font-family is used to give name*/
+    font-family: "logo-font"; /*quotes because of more than one word*/
+    src: url("../Fonts/Aquire-BW0ox.otf");
+}
+body{
+    background-image: linear-gradient(250deg , 	rgba(191 , 85 , 236 , 0.7) ,rgba(159, 90, 253,0.5),  rgb(51, 51, 255,0.7)) , url('../images/1.jpg');
+    background-size: cover;
+    height : 100vh;
+    width : 100%;
+    background-repeat: no-repeat;
+    background-position : center center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#nav-head{
+    background-image : linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
+    display : flex;
+    background-size: cover;
+    position:fixed;
+    width : 100%;
+    z-index : 100;
+}
+#logo{
+    /*margin-left :-5rem;
+    */font-family: logo-font , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size : 25px;
+    width : 40%;
+    padding-left : 10%;
+}
+
+#navigation{
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width : 60%;
+}
+
+.navlink{
+    text-decoration: none;
+    font-family: logo-font , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    position: relative;
+    color : black;
+    transition: color 0.5s ease-in-out;
+    font-size : 20px;
+}
+
+.navlink::before{
+    content : "";
+    position : absolute;
+    top : 0;
+    height : 22px;
+    width  :0;
+    background-image: linear-gradient(250deg , 	rgba(191 , 85 , 236 , 0.7) ,rgba(159, 90, 253,0.5),  rgb(51, 51, 255,0.7));   
+    transition: width 0.5s ease-in-out;
+    z-index : -1;
+}
+
+.navlink:hover::before{
+    width : 100%;
+}
+
+.navlink:hover{
+    background : -webkit-linear-gradient( 118deg, rgba(255, 255, 255,1) , rgba(255, 255, 159,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width : 600px) {
+    #navigation{
+        flex-direction :row;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlink{
+        margin : 20px;
+    }
+}
+
+
+
+
+/*footer*/
+footer{
+    color : white;
+    margin-top : 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-image: linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
+    */background-color: black;
+    padding-bottom : 20px;
+}
+
+#fotp{
+    text-align: center;
+    margin-left : 5%;
+    margin-right : 5%;
+}
+
+#fothr{
+    width : 75%;
+    height : 2px;
+    background-color : white;
+}
