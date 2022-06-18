@@ -6,14 +6,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    min-height: calc(100vh - 1px);
 }
 #basic{
     display : flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    min-height: calc(100vh - 1px);
-    margin-bottom : 50px;
     position: relative;
     overflow: hidden;
 }
@@ -96,6 +95,7 @@ label[for="amount"]{
     width : 350px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
+    margin-bottom : 50px;
 }
 
 #transaction:hover{
