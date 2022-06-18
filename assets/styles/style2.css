@@ -70,10 +70,20 @@ td{
     }
 }
 
-@media screen and (max-width : 420px ) {
+@media screen and (max-width : 480px )and (min-width : 321px) {
     #cust-table{
-        margin-left : 2%;
-        width : 250px;
+        margin-left : 3vw;
+        width : 300px;
+        overflow-x: auto;
+        table-layout: fixed;
+        display: block;
+    }
+}
+
+@media screen and (max-width : 320px ) {
+    #cust-table{
+        margin-left : 1px;
+        width : 220px;
         overflow-x: auto;
         table-layout: fixed;
         display: block;
