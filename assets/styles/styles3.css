@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height : 650px;
+    min-height: calc(100vh - 1px);
     margin-bottom : 50px;
     position: relative;
     overflow: hidden;
