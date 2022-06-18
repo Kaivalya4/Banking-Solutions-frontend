@@ -22,7 +22,7 @@ fetch(`https://bank-solutions.herokuapp.com/${content}` , {
     console.log(from);
 }) 
 
-fetch(`https://bank-solutions.herokuapp.com/${content}`)
+fetch(`https://bank-solutions.herokuapp.com/details/${content}`)
 .then( (response) => response.json())
 .then( (datas) => {
     for(let data of datas){
