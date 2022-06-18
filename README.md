@@ -23,7 +23,7 @@
 <a><h3>Application link</h3></a>
 <hr>
 <p>
-  <li>https://github.com/Kaivalya4/Banking-Solutions-frontend</li>
+  <li>https://kaivalya4.github.io/Banking-Solutions-frontend/</li>
 </p>
 
 <a><h3>Backend :scroll: </h3></a>
