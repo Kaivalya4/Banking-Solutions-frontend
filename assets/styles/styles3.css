@@ -15,6 +15,7 @@ body{
     height : 650px;
     margin-bottom : 50px;
     position: relative;
+    overflow: hidden;
 }
 #detail{
     border-radius: 10px;
@@ -126,16 +127,61 @@ tbody:before {
     }
 }
 
+@media screen and  (max-width : 440px) {
+    body{
+        font-size : 10px;
+    }
+    #transaction{
+        display: block;
+        width : 350px;
+        overflow-x: auto;
+        table-layout: fixed;
+    }
+}
+
+@media screen and  (max-width : 340px) {
+    body,html{
+        font-size : 12px;
+    }
+    #transaction{
+        display: block;
+        width : 250px;
+        overflow-x: auto;
+        table-layout: fixed;
+    }
+}
+
+@media screen and  (max-width : 261px) {
+    body,html{
+        font-size : 10px;
+    }
+    #transaction{
+        display: block;
+        width : 200px;
+        overflow-x: auto;
+        table-layout: fixed;
+    }
+    #detail , #transfer{
+        width : 200px;
+    }
+    input{
+        width : 100px;
+    }
+}
+
 /*footer*/
-footer{
+#fotter{
     color : white;
-    margin-top : 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*background-image: linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
-    */background-color: black;
+    justify-content: center;
+    background-color: black;
     padding-bottom : 20px;
+    margin-bottom: 0px;
+    width : 100vw;
+    align-self: stretch;
+    background-size: 100vw 100%;
 }
 
 #fotp{
@@ -145,7 +191,9 @@ footer{
 }
 
 #fothr{
-    width : 75%;
+    align-items: center;
+    justify-content: center;
+    max-width : 75%;
     height : 2px;
     background-color : white;
 }
