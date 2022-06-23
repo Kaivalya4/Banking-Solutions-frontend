@@ -24,6 +24,8 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     background-image : linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 #detail:hover{
@@ -35,20 +37,28 @@ body{
     width: 52%;
     margin-top : 5%;
     margin-left:25%;
+    border-radius: 50%;
 }
 
 #name{
-    margin-left :10px;
+    /* margin-left :10px; */
+    text-align: center;
 }
 
 #accNo{
-    margin-left : 10px;
-    color : rgb(48, 48, 165)
+    /* margin-left : 10px; */
+    text-align: center;
+    font-size: 1rem;
+    color : rgb(48, 48, 165);
+    margin: 0;
+    padding: 0;
 }
 
 #balance{
-    margin-left : 80px;
+    /* margin-left : 80px; */
     color: rgb(44, 210, 44);
+    padding: 0;
+    text-align: center;
 }
 
 #transfer{
@@ -63,6 +73,8 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     background-image : linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 #transfer:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
@@ -70,12 +82,17 @@ body{
 
 #transfer-head{
     display: block;
+    padding: 0.5rem 1rem;
     background-image : linear-gradient(118deg , rgba(255, 255, 255,1) , rgba(255, 255, 159,1));
 }
 
 #from , #to , input[type="submit"]{
-    border-radius: 10px;
+    border-radius: 99px;
     border : 1px solid black;
+    padding: 0.2rem 0.5rem;
+}
+input[type="submit"] {
+    cursor: pointer;
 }
 
 label[for="amount"]{
@@ -83,9 +100,10 @@ label[for="amount"]{
 }
 
 #amount{
-    border-radius: 10px;
+    border-radius: 99px;
     border : 1px solid black;
     margin-left : 50px;
+    padding: 0.2rem 0.5rem;
 }
 
 #transaction{
@@ -132,8 +150,8 @@ tbody:before {
         font-size : 10px;
     }
     #transaction{
-        display: block;
-        width : 350px;
+        /* display: block; */
+        width : 80%;
         overflow-x: auto;
         table-layout: fixed;
     }
@@ -144,7 +162,7 @@ tbody:before {
         font-size : 12px;
     }
     #transaction{
-        display: block;
+        /* display: block; */
         width : 250px;
         overflow-x: auto;
         table-layout: fixed;
