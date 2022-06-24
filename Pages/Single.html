@@ -10,7 +10,11 @@
   </head>
   <body>
     <header id="nav-head">
-      <h1 id="logo">Z-BANK</h1>
+      <h1 id="logo">
+        <a href="../index.html" style="color: #000; text-decoration: none"
+          >Z-BANK</a
+        >
+      </h1>
       <nav id="navigation">
         <div class="navbutton">
           <a href="../index.html" class="navlink">Home</a>
@@ -71,15 +75,17 @@
           <input type="submit" value="Transfer" id="transubmit" />
         </form>
       </div>
-      <table id="transaction" cellspacing="8">
-        <thead>
-          <th id="tfrom">From</th>
-          <th id="tto">To</th>
-          <th id="date">Date</th>
-          <th id="tto">Amount</th>
-        </thead>
-        <tbody id="trans-detail"></tbody>
-      </table>
+      <div class="transaction-table">
+        <table id="transaction" cellspacing="8">
+          <thead>
+            <th id="tfrom">From</th>
+            <th id="tto">To</th>
+            <th id="date">Date</th>
+            <th id="tto">Amount</th>
+          </thead>
+          <tbody id="trans-detail"></tbody>
+        </table>
+      </div>
     </div>
 
     <div id="fotter">
@@ -93,7 +99,9 @@
         ipsa ea rem! Dicta, recusandae!
       </p>
       <hr id="fothr" />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, illo.
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, illo.
+      </p>
     </div>
 
     <script

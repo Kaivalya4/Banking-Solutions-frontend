@@ -16,6 +16,9 @@ button1.addEventListener("click", () => {
       const loadingStatus = document.querySelector(".loadingStatus");
       loadingBlock.removeChild(loadingStatus);
 
+      const table = document.querySelector("#cust-table");
+      table.style.display = "table";
+
       button1.style.display = "none";
       for (let i = 0; i < data.length; i++) {
         button1.style.display = "none";
@@ -45,9 +48,11 @@ button1.addEventListener("click", () => {
         buttoni.id = `but${++ctr}`;
         buttoni.className = "tablebut";
         buttoni.style.width = "100%";
-        buttoni.style.borderRadius = "10px";
+        buttoni.style.borderRadius = "99px";
         buttoni.style.backgroundColor = "rgba(255, 255, 255,0.9)";
         buttoni.style.border = "none";
+        buttoni.style.padding = "0.5rem 0";
+        buttoni.style.cursor = "pointer";
         buttoni.textContent = "Click";
         newtd4.appendChild(buttoni);
         /*newtd4.innerHTML = `<button id="but${++ctr}"
