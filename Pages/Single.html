@@ -1,73 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/style1.css">
-    <link rel="stylesheet" href="../assets/styles/styles3.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style1.css" />
+    <link rel="stylesheet" href="../assets/styles/styles3.css" />
     <title>User Detials</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="nav-head">
-        <h1 id="logo">Z-BANK</h1>
-        <nav id="navigation">
-            <div class="navbutton">
-                <a href="../index.html" class="navlink">Home</a>
-            </div>
-            <div class="navbutton">
-                <a href="./Customer.html" class="navlink">Customers</a>
-            </div>
-        </nav>
-    </header>
-    <div id="spacer" style="width : 100%; height:100px;"></div>
-    <div id="all">
-    <div id="basic">
-        <div id="detail">
-            <img src="../assets/images/2.png" alt="" id="avatar">
-            <div>
-                <h4 id="name"></h4>
-                <h5 id="accNo"></h5>
-                <h3 id="balance"></h3>
-            </div>
+      <h1 id="logo">
+        <a href="../index.html" style="color: #000; text-decoration: none"
+          >Z-BANK</a
+        >
+      </h1>
+      <nav id="navigation">
+        <div class="navbutton">
+          <a href="../index.html" class="navlink">Home</a>
         </div>
-        <form action ='https://bank-solutions.herokuapp.com/transfer' method = 'POST' id="transfer" >
-            <h2 id="transfer-head">Transfer Money</h2>
-            <div id="from-div">
-                <label for="from">From:&nbsp;</label>
-                <input type="text" value="" id="from" name="from" tabindex="-1">
-            </div>
-            <div id='to-div'>
-                <label for="to">To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="text" placeholder="Enter.." id="to" name = 'to' required pattern = '[0-9]+' maxlength="12" minlength="12">
-            </div>
-            <div>
-                <label for="amount">Amount:</label>
-                <br>
-                <input type="number" placeholder="Enter.." id="amount" name = 'amount' required step=".01">
-            </div>
-            <input type="submit" value="Transfer" id="transubmit" >
+        <div class="navbutton">
+          <a href="./Customer.html" class="navlink">Customers</a>
+        </div>
+      </nav>
+    </header>
+    <div id="spacer" style="width: 100%; height: 100px"></div>
+    <div id="all">
+      <div id="basic">
+        <div id="detail">
+          <img src="../assets/images/2.png" alt="" id="avatar" />
+          <div>
+            <h4 id="name"></h4>
+            <h5 id="accNo"></h5>
+            <h3 id="balance"></h3>
+          </div>
+        </div>
+        <form
+          action="https://bank-solutions.herokuapp.com/transfer"
+          method="POST"
+          id="transfer"
+        >
+          <h2 id="transfer-head">Transfer Money</h2>
+          <div id="from-div">
+            <label for="from">From:&nbsp;</label>
+            <input type="text" value="" id="from" name="from" tabindex="-1" />
+          </div>
+          <div id="to-div">
+            <label for="to"
+              >To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+            >
+            <input
+              type="text"
+              placeholder="Enter.."
+              id="to"
+              name="to"
+              required
+              pattern="[0-9]+"
+              maxlength="12"
+              minlength="12"
+            />
+          </div>
+          <div>
+            <label for="amount">Amount:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="Enter.."
+              id="amount"
+              name="amount"
+              required
+              step=".01"
+            />
+          </div>
+          <input type="submit" value="Transfer" id="transubmit" />
         </form>
-    </div>
-    <table id="transaction" cellspacing = "8">
-        <thead>
-            <th id="tfrom" >From</th>
+      </div>
+      <div class="transaction-table">
+        <table id="transaction" cellspacing="8">
+          <thead>
+            <th id="tfrom">From</th>
             <th id="tto">To</th>
             <th id="date">Date</th>
             <th id="tto">Amount</th>
-        </thead>
-        <tbody id="trans-detail">
-
-        </tbody>
-    </table>
+          </thead>
+          <tbody id="trans-detail"></tbody>
+        </table>
+      </div>
     </div>
 
-    <div id="fotter" >
-        <h3>Banking Solutions Application</h3>
-        <p id="fotp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat enim, perspiciatis est non itaque qui vero nihil eius dolorum, quibusdam debitis voluptas veritatis cupiditate nisi! Soluta, eum aspernatur excepturi eius quaerat consequuntur, id commodi laboriosam culpa aliquid voluptatibus exercitationem fugit provident ab distinctio esse maxime, ipsa ea rem! Dicta, recusandae!</p>
-        <hr id="fothr">
+    <div id="fotter">
+      <h3>Banking Solutions Application</h3>
+      <p id="fotp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat enim,
+        perspiciatis est non itaque qui vero nihil eius dolorum, quibusdam
+        debitis voluptas veritatis cupiditate nisi! Soluta, eum aspernatur
+        excepturi eius quaerat consequuntur, id commodi laboriosam culpa aliquid
+        voluptatibus exercitationem fugit provident ab distinctio esse maxime,
+        ipsa ea rem! Dicta, recusandae!
+      </p>
+      <hr id="fothr" />
+      <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, illo.
+      </p>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js"
+      integrity="sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../scripts/script2.js"></script>
-</body>
+  </body>
 </html>

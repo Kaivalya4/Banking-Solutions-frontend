@@ -24,6 +24,8 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     background-image : linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 #detail:hover{
@@ -35,20 +37,28 @@ body{
     width: 52%;
     margin-top : 5%;
     margin-left:25%;
+    border-radius: 50%;
 }
 
 #name{
-    margin-left :10px;
+    /* margin-left :10px; */
+    text-align: center;
 }
 
 #accNo{
-    margin-left : 10px;
-    color : rgb(48, 48, 165)
+    /* margin-left : 10px; */
+    text-align: center;
+    font-size: 1rem;
+    color : rgb(48, 48, 165);
+    margin: 0;
+    padding: 0;
 }
 
 #balance{
-    margin-left : 80px;
+    /* margin-left : 80px; */
     color: rgb(44, 210, 44);
+    padding: 0;
+    text-align: center;
 }
 
 #transfer{
@@ -63,6 +73,8 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
     background-image : linear-gradient(118deg , rgba(255, 255, 255,0.8) , rgba(255, 255, 159,0.8));
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 #transfer:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
@@ -70,12 +82,17 @@ body{
 
 #transfer-head{
     display: block;
+    padding: 0.5rem 1rem;
     background-image : linear-gradient(118deg , rgba(255, 255, 255,1) , rgba(255, 255, 159,1));
 }
 
 #from , #to , input[type="submit"]{
-    border-radius: 10px;
+    border-radius: 99px;
     border : 1px solid black;
+    padding: 0.2rem 0.5rem;
+}
+input[type="submit"] {
+    cursor: pointer;
 }
 
 label[for="amount"]{
@@ -83,19 +100,32 @@ label[for="amount"]{
 }
 
 #amount{
-    border-radius: 10px;
+    border-radius: 99px;
     border : 1px solid black;
     margin-left : 50px;
+    padding: 0.2rem 0.5rem;
+}
+
+.transaction-table {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.transaction-table::-webkit-scrollbar {
+    height: 2px;
+    background: #eee;
 }
 
 #transaction{
     font-family: Poppins;
-    align-self: center;
+    margin: 10px auto;
     background-image: linear-gradient(118deg , rgba(255, 255, 255,0.6) , rgba(255, 255, 159,0.6));;
-    width : 350px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin-bottom : 50px;
+    table-layout: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
 #transaction:hover{
@@ -105,6 +135,13 @@ label[for="amount"]{
 th{
     background-image : linear-gradient(118deg , rgba(255, 255, 255,1) , rgba(255, 255, 159,1));
     margin : 10px;
+    text-align: center;
+}
+td {
+    text-align: center;
+    min-width: 150px;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    padding: 0.5rem 0;
 }
 tbody:before {
     content: "-";
@@ -123,7 +160,7 @@ tbody:before {
         height : 350px;
     }
     #transaction{
-        width: 700px;
+        min-width: 800px;
     }
 }
 
@@ -132,10 +169,7 @@ tbody:before {
         font-size : 10px;
     }
     #transaction{
-        display: block;
-        width : 350px;
-        overflow-x: auto;
-        table-layout: fixed;
+        min-width : 350px;
     }
 }
 
@@ -144,10 +178,7 @@ tbody:before {
         font-size : 12px;
     }
     #transaction{
-        display: block;
-        width : 250px;
-        overflow-x: auto;
-        table-layout: fixed;
+        min-width : 250px;
     }
 }
 
@@ -179,12 +210,11 @@ tbody:before {
     background-color: black;
     padding-bottom : 20px;
     margin-bottom: 0px;
-    width : 100vw;
     align-self: stretch;
     background-size: 100vw 100%;
 }
 
-#fotp{
+#fotter p{
     text-align: center;
     margin-left : 5%;
     margin-right : 5%;

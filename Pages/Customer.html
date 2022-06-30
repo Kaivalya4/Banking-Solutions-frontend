@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/style1.css" >
-    <link rel="stylesheet" href="../assets/styles/style2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style1.css" />
+    <link rel="stylesheet" href="../assets/styles/style2.css" />
     <title>Customers</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="nav-head">
-        <h1 id="logo">Z-BANK</h1>
-        <nav id="navigation">
-            <div class="navbutton"><a href="../index.html" class="navlink">Home</a></div>
-            <div class="navbutton"><a href="" class="navlink">Customers</a></div>
-        </nav>
+      <h1 id="logo">
+        <a href="../index.html" style="color: #000; text-decoration: none"
+          >Z-BANK</a
+        >
+      </h1>
+      <nav id="navigation">
+        <div class="navbutton">
+          <a href="../index.html" class="navlink">Home</a>
+        </div>
+        <div class="navbutton"><a href="" class="navlink">Customers</a></div>
+      </nav>
     </header>
     <div id="spacer"></div>
-    <button id="button1">Show all customers</button>
+    <div class="button">
+      <button id="button1">Show all customers</button>
+    </div>
     <div id="divcontent">
-    <table id="cust-table" cellspacing = '8'>
+      <div class="loading"></div>
+      <table id="cust-table" cellspacing="8">
         <thead>
-            <th>Account no.</th>
-            <th>Name</th>
-            <th>Balance</th>
-            <th>Details</th>
+          <th>Account no.</th>
+          <th>Name</th>
+          <th>Balance</th>
+          <th>Details</th>
         </thead>
-        <tbody id="to-put">
-        </tbody>
-    </table>
+        <tbody id="to-put"></tbody>
+      </table>
     </div>
-    <div id="fotter" >
-        <h3>Banking Solutions Application</h3>
-        <p id="fotp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat enim, perspiciatis est non itaque qui vero nihil eius dolorum, quibusdam debitis voluptas veritatis cupiditate nisi! Soluta, eum aspernatur excepturi eius quaerat consequuntur, id commodi laboriosam culpa aliquid voluptatibus exercitationem fugit provident ab distinctio esse maxime, ipsa ea rem! Dicta, recusandae!</p>
-        <hr id="fothr">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, illo.</p>
+
+    <div id="fotter">
+      <h3>Banking Solutions Application</h3>
+      <p id="fotp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat enim,
+        perspiciatis est non itaque qui vero nihil eius dolorum, quibusdam
+        debitis voluptas veritatis cupiditate nisi! Soluta, eum aspernatur
+        excepturi eius quaerat consequuntur, id commodi laboriosam culpa aliquid
+        voluptatibus exercitationem fugit provident ab distinctio esse maxime,
+        ipsa ea rem! Dicta, recusandae!
+      </p>
+      <hr id="fothr" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, illo.
+      </p>
     </div>
+
     <script src="../scripts/script1.js"></script>
-</body>
+  </body>
 </html>
